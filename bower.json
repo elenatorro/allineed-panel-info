@@ -1,0 +1,28 @@
+{
+    "name": "allineed-panel-info",
+    "authors": [
+        "Elena Torro <elenatorro@gmail.com>"
+    ],
+    "version": "0.1.0",
+    "description": "Panel Info module for All I Need CSS framework (allineed). Can be used independently",
+    "main": "_panel-info.scss",
+    "keywords": [
+        "css",
+        "framework",
+        "allineed",
+        "panel",
+        "info",
+        "user",
+        "sass",
+        "scss"
+    ],
+    "license": "MIT",
+    "homepage": "elenatorro.github.io/allineed-panel-header-info",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}

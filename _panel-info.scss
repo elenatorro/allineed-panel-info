@@ -1,0 +1,59 @@
+// Mixins
+
+@mixin info-logo-margin() {
+    margin: $ain-panel-info-header-height - ($ain-panel-info-logo-size / 2 - ($ain-panel-info-padding / 2)) auto 0 auto;
+}
+
+@mixin ain-panel-part() {
+    margin: 0;
+    padding: $ain-panel-info-padding;
+}
+
+@mixin ain-panel() {
+    display: block;
+    margin-bottom: $ain-panel-info-margin;
+    width: 100%;
+    border: $ain-panel-info-border;
+    border-radius: $ain-panel-info-border-radius;
+}
+
+// Panel Info
+
+.ain-panel-info {
+    @include ain-panel();
+    border-color: transparent;
+}
+
+.ain-panel-info-body {
+    @include ain-panel-part();
+    border-color: transparent;
+    margin-top: $ain-panel-info-logo-size / 2;
+}
+
+.ain-panel-info-header {
+    @include ain-panel-part();
+    height: $ain-panel-info-header-height;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border: $ain-panel-info-border;
+}
+
+.ain-panel-info-header-logo {
+    @include info-logo-margin();
+
+    width: $ain-panel-info-logo-size;
+    height: $ain-panel-info-logo-size;
+
+    left: 0;
+    right: 0;
+
+    display: inline-block;
+    position: absolute;
+
+    border: $ain-panel-info-logo-border-size solid $ain-panel-info-border-color;
+    border-radius: 50%;
+
+    text-align: center;
+}
